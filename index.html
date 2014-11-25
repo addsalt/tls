@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="handheldfriendly" content="true">
+	<meta name="mobileoptimized" content="240">
+	<meta name="viewport" content="width=device-width,intial-scale=1">
+	<meta name="description" content="Hey, I'm Dani. This is my website.">
+	<link href="css/grid.css" rel="stylesheet">
+	<link href="css/general.css" rel="stylesheet">
+	<title>Meet Dani</title>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    
+<header>
+    <a href="#nav" class="nav-btn hide-text">Navigation</a>
+    <div role="navigation" class="nav nav-top left-nav font_small" data-state="collapsed">
+        <img class="logo flex-img" src="http://placehold.it/300x300/ffffff/666666/">
+        <ul class="nav-i main-elements">
+            <li><a href="#">Vive Tolouse</a></li>
+            <li><a href="#">Carreras</a></li>
+            <li><a href="#">Extensión Profesional</a></li>
+            <li><a href="#">Extensión Profesional</a></li>
+            <li><a href="#">Laboratorio Creativo</a></li>
+            <li><a href="#">Eventos y Actualidad</a></li>
+            <li><a href="#">TLS Empresas</a></li>
+            <li><a href="#">Colegios</a></li>
+            <li><a href="#">Admisión</a></li>
+            <li><a href="#">Poder TLS</a></li>
+        </ul>
+        <ul class="nav-i intranet">
+            <li><a href="#">Galerías</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Intranet</a></li>
+            <li><a href="#">Contáctanos</a></li>
+        </ul>
+        <div class="contact">
+            <div class="nav-i social-media">
+                <a href="#"><img src="http://placehold.it/50x50/666666/666666/"></a>
+                <a href="#"><img src="http://placehold.it/50x50/666666/666666/"></a>
+                <a href="#"><img src="http://placehold.it/50x50/666666/666666/"></a>
+                <a href="#"><img src="http://placehold.it/50x50/666666/666666/"></a>
+            </div>
+            <p class="tres">511-283-9374<br>email@email.com</p>
+            <p class="extra_small">Instituto de Educación Superior Tecnológico Privado Tolouse Lautrec</p>
+            <p class="extra_small">Copyright © 2014</p>
+        </div>
+    </div>
+</header>
+    
+    <div class="inner-nav">
+        <ul>
+            <li>Galerías</li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Intranet</a></li>
+            <li><a href="#">Contáctanos</a></li>
+        </ul>
+    </div>
+    
+    <div class="extra-nav">
+        <a href="#"><img class="button" src="http://placehold.it/50x50/666666/666666/"></a>
+        <a href="#" class="language">EN</a>
+    </div>
+    
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script>
+        $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+    </script>
+    <script src="js/midnight.jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.left-nav').midnight();
+            $('.right-nav').midnight();
+        });
+    </script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

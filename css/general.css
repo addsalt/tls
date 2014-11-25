@@ -1,0 +1,268 @@
+/* CSS */
+
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:after,
+*::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+	background-color: rgba(77, 87, 96, .1);
+}
+
+.flex-img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+html {font-size: 1em; width: 100%; height: 100%;}
+
+body {
+    font-family: 'Open Sans' sans-serif;
+    background-color: peru;
+    line-height: 1.35;
+    color: #fa423d;
+    width: 100%;
+    position: relative;
+    letter-spacing: 0.001em;
+}
+
+/* Typography */
+
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1, .uno {
+  margin-top: 6em;
+  font-size: 3.157em;
+}
+
+h2, .dos {font-size: 2.369em;}
+
+h3, .tres {font-size: 1.777em;}
+
+h4, .cuatro {font-size: 1.333em;}
+
+small, .font_small {font-size: 0.75em;}
+
+.extra_small {font-size: 0.625em;}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.flex-img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Toggle Nav */
+
+header {
+    z-index: 9;
+}
+
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited{
+	z-index: 9;
+	display: block;
+    position: fixed;
+    top: 0;
+	left: 0;
+	height: 35px;
+	width: 35px;
+	background: white url('../images/nav.png') no-repeat center center;
+	background-size: 16px; 
+	-webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active{
+}
+
+.nav a, 
+.nav a:link,
+.nav a:visited{
+	text-decoration: none;
+	-webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active{
+}
+
+/* Toggle */
+
+.nav-top{
+	display: none;
+}
+
+.nav-top[data-state="expanded"]{
+	display: block;
+}
+
+/* End Toggle */ 
+
+.left-nav {
+    height: auto;
+    overflow: auto;
+    width: 100%;
+    background-color: rgba(255,255,255,.7);
+    left: 0;
+    z-index: 9;
+}
+
+.nav-i li {
+    width: 100%;
+    padding: 0.25rem 0.5em;
+}
+
+.main-elements li {
+    border-top: solid 1px grey;  
+}
+
+.main-elements li:last-child {
+    border-bottom: solid 1px grey;  
+}
+
+.intranet {
+    margin-top: .5rem;
+}
+
+.social-media {
+    margin-bottom: 0.5rem;
+}
+
+.social-media img {
+    display: inline-block;
+    width: 25px;
+}
+
+.contact {
+    position: relative;
+    padding: 0 0.5em 1rem 0.5em;
+}
+
+.contact p {
+    margin-bottom: .5rem;
+}
+
+.logo {
+    max-width: 80px;
+}
+
+@media only screen and (min-width: 50em) and (min-height: 35.875em) {
+		
+	.nav-btn,
+	.nav-btn:link,
+	.nav-btn:visited{
+		display: none;
+	}
+	
+	.nav-top{
+		display: inline-block;
+	}
+    
+    .logo {
+        max-width: 150px;
+    }
+	
+    .left-nav {
+        height: 100vh;
+        width: 13rem;
+        position: fixed;
+        background-color: white;
+        left: 0;
+        z-index: 9;
+    }
+    
+    .contact {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 60em) and (max-height: 42.125em) {
+    .logo {
+        max-width: 50px;
+    }
+}
+
+
+/* Top Nav */
+
+.extra-nav {
+    position: fixed;
+    width: 100%;
+    height: 2rem;
+    padding-left: 14rem;
+    background-color: transparent;
+    z-index: 8;
+    top:0;
+}
+
+.button {
+    height: 2rem;
+    width: 2rem;
+    border:none;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 2rem;
+}
+
+.language {
+    height: 2rem;
+    width: 2rem;
+    padding: 5px;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
