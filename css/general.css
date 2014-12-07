@@ -22,6 +22,14 @@ Green: #a4cd39
     padding: 0;
 }
 
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
 ::selection {
 	background-color: rgba(77, 87, 96, .1);
 }
@@ -178,20 +186,33 @@ header {
     width: 100%;
     left: 0;
     z-index: 9;
-    background-color: #fff;s
+    background-color: #fff;
+    font-weight: 700;
+}
+
+.logo {
+    max-width: 80px;
 }
 
 .main-element {
     width: 100%;
     height: 100%;
     display: block;
-    padding: 0.25rem 0.5em;
+    padding: 0.3rem 1em;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 
+.light {
+    font-weight: 400;
+}
+
 .intranet {
-    border-bottom: none;
+    margin-top: 1rem;
+}
+
+.intranet li a {
+    color: #ba33a3;
 }
 
 .social-media {
@@ -206,15 +227,11 @@ header {
 
 .contact {
     position: relative;
-    padding: 0 0.5em 1rem 0.5em;
+    padding: 0.3rem 1em;
 }
 
 .contact p {
-    margin-bottom: .5rem;
-}
-
-.logo {
-    max-width: 80px;
+    margin-bottom: .75rem;
 }
 
 [data-state="active"] {
@@ -230,7 +247,7 @@ header {
 .second-level {
     width: 100%;
     z-index: 3;
-    background-color: rgba(36, 37, 35,.9);
+    background-color: rgba(36, 37, 35,.95);
     top:0;
     display: none;
     margin-left: 2em;
@@ -245,7 +262,13 @@ header {
 }
 
 .second-level ul a {
-    color: #fff;
+    color: #efefef;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.second-level ul a:hover {
+    color: #d667c3;
 }
 
 @media only screen and (min-width: 60em) {
@@ -255,8 +278,45 @@ header {
         width: calc(100% - 13rem);
         margin-left: 13rem;
         height: 100vh;
+        padding: 7%;
     }
 
+    .scl-child {
+        display: block;
+        float: left;
+        font-size: 1.5rem;
+        width: 33.333%;
+        padding-right: 2rem;
+    }
+    
+    .clear {
+        clear: both;    
+    }   
+
+    .scl-child>ul {
+        margin-top: .75rem;
+    }
+    
+    .scl-child>ul li{
+        font-size: 1rem;
+        margin-top: .65rem;
+        font-weight: 400;
+    }
+    
+    .second-line {
+        margin-top: 3rem;
+    }
+    
+    .second-level ul a.feature {
+        font-weight: 700;
+        color: #23a7bb;
+        border-top: solid 2px #23a7bb;
+        position: relative;
+        display: block;
+        width: 30%;
+        margin-top: 1.5rem;
+        padding-top: .5rem;
+    }
 
 }
 
@@ -273,7 +333,8 @@ header {
 	}
     
     .logo {
-        max-width: 150px;
+        max-width: 110px;
+        margin: 1rem auto;
     }
 	
     .left-nav {
