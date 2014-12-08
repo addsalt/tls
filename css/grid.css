@@ -135,18 +135,18 @@
 @media only screen and (min-width: 38em) {
     
 .gutter {
-    padding-left: 0.25em;
-    padding-right: 0.25em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
     
 .gutter-left {
-    padding-left: 0.5em;
+    padding-left: 1em;
 }
     
 .gutter-right {
-    padding-right: 0.5em;
+    padding-right: 1em;
 }
-
+s
 .unit-m-hidden {
   display: none;
   visibility: hidden;

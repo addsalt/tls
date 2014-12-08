@@ -469,13 +469,6 @@ header {
     background-attachment: fixed;
 }
 
-.event-section {
-    background: white url(../images/people1.jpg) no-repeat center center;
-    background-size: cover;
-    padding-top: 12%;
-    background-attachment: fixed;
-}
-
 .intro>h1 {
     background-color: #fff;
     display: inline-block;
@@ -508,8 +501,16 @@ header {
     transition: all 300ms linear;
 }
 
+.event-section {
+    background: white url(../images/people1.jpg) no-repeat center center;
+    background-size: cover;
+    padding-top: 0%;
+    background-attachment: fixed;
+}
+
 .event-block {
-    padding: 15% 5%;
+    padding: 15% 12%;
+    margin-bottom: 5rem;
     background-color: white;
 }
 
