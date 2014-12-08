@@ -49,6 +49,7 @@ body {
     line-height: 1.35;
     color: #303030;
     width: 100%;
+    height: 100%;
     position: relative;
     letter-spacing: 0.001em;
 }
@@ -471,7 +472,7 @@ header {
 }
 
 .slogan {
-    width: 60%;
+    width: 100%;
     margin-top: 1rem;
     color: black;
 }
@@ -510,13 +511,16 @@ header {
     }
     
     .seeall {
-    display: inline-block;
-    float: right;
-    text-align: right;
-    padding-right: 5rem;
-    margin-top: 2rem;
-}
+        display: inline-block;
+        float: right;
+        text-align: right;
+        padding-right: 5rem;
+        margin-top: 2rem;
+    }
     
+    .slogan {
+        width: 60%;
+    }
 }
 
 
@@ -532,6 +536,109 @@ header {
     color: #fff;
 }
 
+.intro-2 h1 {
+    margin-top: 1.5rem;
+}
+
 .intro-2 small a {
     text-decoration: underline;
+}
+
+.intro-2 .slogan {
+    color: #fff;
+}
+
+.i-nav {
+    display: none;
+}
+
+.internal-nav {
+    pointer-events: visible;
+    position: relative;
+    text-align: right;
+    color: white;
+    z-index: 9;
+    margin-top: 11rem;
+    margin-right: 5%;
+    border-right: solid 5px white;
+    padding-right: 20px;
+}
+
+.internal-nav li a {
+    display: inline-block;
+    margin: 0.25em 0;
+    position: relative;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.internal-nav li a:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: white;
+    height: 5px;
+    width: 0;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.internal-nav li a:hover:before {
+    right: -40px;
+    width: 20px;
+}
+
+.main {
+    font-weight: 600;
+}
+
+.on-light a {
+    color: black;
+}
+
+.on-light .internal-nav {
+    border-right: solid 5px black;
+}
+
+.on-light .internal-nav li a:before {
+    background-color: black;
+}
+
+.boton-enlinea {
+    border: solid 2px white;
+    padding: 0.45em 0.65em;
+}
+
+.prompter {
+    border-left: solid 2px #23a7bb;
+    padding-left: 10px;
+    color: #23a7bb;
+    margin-top: 5rem;
+}
+
+.prompter li {
+    margin: 0.45em 0;
+}
+
+.prompter li:first-child {
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 60em) { 
+
+    .i-nav {
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 8;
+        pointer-events: none;
+        color: #fff;
+    }
+    
+    .internal-content {
+        padding-right: 30%;
+    }
+    
 }

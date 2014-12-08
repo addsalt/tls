@@ -18,6 +18,8 @@ var $introParallax = $('.intro-2');
 $win.on('scroll', function(){
     var scrollPos = $win.scrollTop();
     if(scrollPos > 0) {
-        $introParallax.css({'background-position' : 'center' + (scrollPos/2)+"px"});
+        $introParallax.css({
+            'background-position' : 'center' + (scrollPos/2)
+        });
     }
 });
