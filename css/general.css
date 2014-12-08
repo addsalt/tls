@@ -509,9 +509,27 @@ header {
 }
 
 .event-block {
-    padding: 15% 12%;
+    padding: 15% 12% 15% 11%;
     margin-bottom: 5rem;
     background-color: white;
+    color: white;
+}
+
+.separate {
+    display: block;
+    margin: 10px 0;
+}
+
+.eb-c1 {
+    background-color: #2ab2c6;
+}
+
+.eb-c2 {
+    background-color: #cc3999;
+}
+
+.eb-c3 {
+    background-color: #f8a023;
 }
 
 .link-bloque:hover>.bloque {
