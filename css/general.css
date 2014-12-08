@@ -58,10 +58,6 @@ body {
     padding: 5%;
 }
 
-.transparent {
-    background-color: transparent;
-    background: none;
-}
 
 @media only screen and (min-width: 50em) and (min-height: 35.875em) {
     
@@ -467,6 +463,13 @@ header {
 
 .intro {
     min-height: 100vh;
+    background: white url(../images/people1.jpg) no-repeat center center;
+    background-size: cover;
+    padding-top: 12%;
+    background-attachment: fixed;
+}
+
+.event-section {
     background: white url(../images/people1.jpg) no-repeat center center;
     background-size: cover;
     padding-top: 12%;
