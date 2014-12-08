@@ -239,6 +239,13 @@ header {
     margin-bottom: .75rem;
 }
 
+.active {
+    border-left: solid 6px #a4cd39; 
+    padding-left: 10px;
+    background-color: #303030;
+    color: #fff;
+}
+
 [data-state="active"] {
     background-color: #303030;
     color: #fff;
@@ -510,4 +517,21 @@ header {
     margin-top: 2rem;
 }
     
+}
+
+
+/* Interna */
+
+.intro-2 {
+    min-height: 100vh;
+    background-image: url(../images/interna.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 12%;
+    color: #fff;
+}
+
+.intro-2 small a {
+    text-decoration: underline;
 }
