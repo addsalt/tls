@@ -205,7 +205,7 @@ header {
     z-index: 9;
     background-color: #fff;
     font-weight: 700;
-    margin-top: 5rem;
+    margin-top: 50px;
 }
 
 .logo {
@@ -234,7 +234,7 @@ header {
     .left-nav {
         width: 15rem;
         height: 100vh;
-        margin-top: 5rem;
+        margin-top: 50px;
     }
     
 }
