@@ -351,8 +351,8 @@ header {
 
 @media only screen and (min-width: 30em) {
     
-    .second-level {
-        width: 20rem;
+    .left-nav {
+        width: 30%;
     }
     
 }
