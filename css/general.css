@@ -352,7 +352,20 @@ header {
 @media only screen and (min-width: 20em) {
     
     .left-nav {
-        width: 20rem;
+        height: auto;
+        overflow: visible;
+        width: 20%;
+        left: 0;
+        background-color: #fff;
+        font-weight: 700;
+    }
+    
+    .second-level {
+        width: 13rem;
+        margin: 0;
+        height: 100vh;
+        padding: 7%;
+        background-color: rgba(36, 37, 35,.95);
     }
     
 }
