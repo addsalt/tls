@@ -137,6 +137,7 @@ ul {
 
 header {
     z-index: 9;
+    position: relative;
 }
 
 .hide-text {
@@ -234,7 +235,7 @@ header {
     .left-nav {
         width: 15rem;
         height: 100vh;
-        margin-top: 50px;
+        margin-top: 50px;        
     }
     
 }
