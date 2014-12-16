@@ -554,7 +554,7 @@ header {
     min-height: 100vh;
     background: white url(../images/people1.jpg) no-repeat center center;
     background-size: cover;
-    padding: 7% 0 20rem;
+    padding: 7% 0 0 0;
     background-attachment: fixed;
 }
 
@@ -574,6 +574,11 @@ header {
 
 .background-section h1 {
     color: #57a016;
+}
+
+.background-image {
+    background: #d3d853 url(../images/) no-repeat center center;
+    background-size: cover;
 }
 
 .homepage h1 {
