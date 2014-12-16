@@ -321,17 +321,6 @@ header {
     display: block;
 }
 
-@media only screen and (min-width: 30em) {
-    .second-level {
-        width: 30%;
-        z-index: 3;
-        top:0;
-        display: none;
-        margin-left: 2em;
-        padding-bottom: 2rem;
-    }
-}
-
 .second-level li a {
     color: #a4cd39;
 }
@@ -358,6 +347,14 @@ header {
 .second-level ul a.feature {
     font-weight: 700;
     color: #23a7bb;
+}
+
+@media only screen and (min-width: 30em) {
+    
+    .second-level {
+        width: 20rem;
+    }
+    
 }
 
 @media only screen and (min-width: 60em) {
