@@ -360,14 +360,6 @@ header {
         font-weight: 700;
     }
     
-    .second-level {
-        width: 13rem;
-        margin: 0;
-        height: 100vh;
-        padding: 7%;
-        background-color: rgba(36, 37, 35,.95);
-    }
-    
 }
 
 @media only screen and (min-width: 50em) and (min-height: 37.875em) {
@@ -562,8 +554,26 @@ header {
     min-height: 100vh;
     background: white url(../images/people1.jpg) no-repeat center center;
     background-size: cover;
-    padding: 7% 4% 20rem;
+    padding: 7% 0 20rem;
     background-attachment: fixed;
+}
+
+.side-padding {
+    padding-left: 4%;
+    padding-right: 4%;å
+}
+
+.background-section {
+    background-color: #d3d853;
+    padding: 17% 4%;
+}
+
+.background-section p {
+    color: #fff;
+}
+
+.background-section h1 {
+    color: #57a016;
 }
 
 .homepage h1 {
