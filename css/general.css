@@ -151,11 +151,11 @@ header {
 	z-index: 9;
 	display: block;
     position: fixed;
-    top: 10px;
-	left: 10px;
-	height: 20px;
-	width: 25px;
-	background: transparent url('../images/nav.png') no-repeat center center;
+    top: 0px;
+	left: 50px;
+	width: 50px;
+    height: 50px;
+	background: white url('../images/nav.png') no-repeat center center;
 	background-size: 20px; 
 	-webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
@@ -210,6 +210,41 @@ header {
 .logo {
     max-width: 80px;
     margin-top: 1rem;
+}
+
+.logo-small {
+    width: 50px;
+    height: 50px;
+    left: 0px;
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    padding: 10px;
+    display: block;
+}
+
+@media only screen and (min-width: 30em) {
+    
+    .logo-small {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .nav-btn,
+    .nav-btn:link,
+    .nav-btn:visited{
+
+        left: 80px;
+    }
+    
+}
+
+@media only screen and (min-width: 50em) {
+
+    .logo-small {
+        display: none;
+    }
+    
 }
 
 .main-element {
@@ -280,6 +315,17 @@ header {
 
 .second-level[data-state="visible"] {
     display: block;
+}
+
+@media only screen and (min-width: 30em) {
+    .second-level {
+        width: 30%;
+        z-index: 3;
+        top:0;
+        display: none;
+        margin-left: 2em;
+        padding-bottom: 2rem;
+    }
 }
 
 .second-level li a {
@@ -432,16 +478,27 @@ header {
 
 .encuentra {
     cursor: pointer;
+    font-size: 0.7rem;
     text-align: center;
     position: absolute;
     font-weight: 500;
     top: 0;
-    right: 8rem;
+    right: 5.5rem;
     display: block;
     background-color: white;
     border-radius: 0 0 4px 4px;
     height: 100%;
-    padding: 9px 10px;
+    padding: 12px 10px;
+}
+
+@media only screen and (min-width: 40em) { 
+    
+    .encuentra {
+        font-size: 1rem;
+        right: 8rem;
+        padding: 8px 10px;
+    }
+
 }
 
 .searchbar {
@@ -725,8 +782,7 @@ header {
     
     .push-top-half {
         margin-top: 5rem; 
-    }
-    
+    } 
     
 }
 
